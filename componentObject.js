@@ -43,7 +43,10 @@ function componentObject () {
         this.object.setAttribute(key,value);
     }
     this.setText = function(text){
-        this.object.innerText = text;
+        this.object.innerText = text.toString();
+    }
+    this.content = function(text){
+        this.object.innerText = text.toString();
     }
 };
 export default componentObject;
